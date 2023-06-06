@@ -1,0 +1,47 @@
+/* Navigation Bar */
+.navbar {
+  background-color: #333333;
+}
+
+.btn {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+.btn-primary {
+  background: #BDA987;
+  color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background: #252525;
+}
+
+.btn-primary:active, .btn-primary.active {
+  background: #BDA987;
+  box-shadow: none;
+}
+
+.btn.sharp {
+  border-radius:0;
+}
+
+.square-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Maintain a 1:1 aspect ratio */
+  overflow: hidden;
+}
+
+.square-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+}

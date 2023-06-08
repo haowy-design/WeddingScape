@@ -1,215 +1,343 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>WeddingScape</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Link stylesheet -->
     <link rel="stylesheet" href="css/index.css" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Planner</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">My Wedding</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#">
-                <img src="/images/WeddingScape - Logo Small.png" width="100%">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Inspirations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Suppliers</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-dark w-100">
+      <div
+        class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
+      >
+        <ul class="navbar-nav flex-grow-1 justify-content-start">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Planner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Wedding   <i class="arrow down"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="order-0">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".dual-collapse2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/images/WeddingScape - Logo Small.png" width="100%" />
+        </a>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav flex-grow-1 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inspirations<i class="arrow down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Suppliers<i class="arrow down"></i></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Space -->
-    <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">Embark on Your Perfect Wedding Journey</h1>
-        <h2 class="display-5 fw-bold text-body-emphasis">We’ll hold your hand every step of the way</h2>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Using our quiz, develop and personalize your plan to help create your ideal wedding. Your all-in-one wedding manager.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn sharp btn-primary btn-lg px-4 gap-3">Build your journey</button>
-          </div>
+    <div class="heroSpace px-4 py-5 text-center">
+      <div class="heroElements">
+      <h1 class="display-5 fw-bold text-body-emphasis">
+        Embark on Your Perfect Wedding Journey
+      </h1>
+      <h2 class="display-5 fw-bold text-body-emphasis">
+        We’ll hold your hand every step of the way
+      </h2>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Using our quiz, develop and personalize your plan to help create your
+          ideal wedding. Your all-in-one wedding manager.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn sharp btn-primary btn-lg px-4 gap-3">
+            Build your journey
+          </button>
         </div>
       </div>
+      </div>
+    </div>
 
     <!-- How it Works Space -->
-    <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 text-center">How It Works</h2>
-        <p class="mb-4 text-center">At WeddingScape, we believe in a personalized and stress-free wedding planning experience. Our streamlined process ensures that your journey is smooth and enjoyable. Here's how it works:</p>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3">
-              <img src="/images/sign-up-icon.svg" alt="sign up icon">
-            </div>
-            <h3 class="pb-2 fs-2 text-body-emphasis text-center">Sign up and Create Your Profile</h3>
-            <p class="text-center">Get started by signing up for WeddingScape and creating your profile. Provide basic information about your wedding, such as the date and location.</p>
+    <div class="howItWorksContainer container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 text-center">How It Works</h2>
+      <p class="mb-4 text-center">
+        At WeddingScape, we believe in a personalized and stress-free wedding
+        planning experience. Our streamlined process ensures that your journey
+        is smooth and enjoyable. Here's how it works:
+      </p>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 col-sm-12 col-md-12 align-items-center justify-content-center">
+        <div class="feature col">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center mb-3"
+          >
+            <img src="/images/sign-up-icon.svg" alt="sign up icon" />
           </div>
-          <div class="feature col">
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3">
-              <img src="/images/explore-and-plan-icon.svg" alt="sign up icon">
-            </div>
-            <h3 class="pb-2 fs-2 text-body-emphasis text-center">Explore and Plan</h3>
-            <p class="text-center">Dive into wedding planning through our user-friendly app. Discover inspiration, themes, and decor ideas. Use our tools to plan your timeline, manage your budget, create checklists, and collaborate with your partner.</p>
+          <h3 class="pb-2 fs-2 text-body-emphasis text-center">
+            Sign up and Create Your Profile
+          </h3>
+          <p class="text-center">
+            Get started by signing up for WeddingScape and creating your
+            profile. Provide basic information about your wedding, such as the
+            date and location.
+          </p>
+        </div>
+        <div class="feature col">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center mb-3"
+          >
+            <img src="/images/explore-and-plan-icon.svg" alt="sign up icon" />
           </div>
-          <div class="feature col">
-            <div class="d-flex flex-column align-items-center justify-content-center mb-3">
-              <img src="/images/supplier-suggestions-icon.svg" alt="sign up icon">
-            </div>
-            <h3 class="pb-2 fs-2 text-body-emphasis text-center">Supplier Suggestions</h3>
-            <p class="text-center">Find trusted suppliers in categories like venues, photographers, florists, and caterers. Explore their profiles, portfolios, and reviews to make informed decisions.</p>
+          <h3 class="pb-2 fs-2 text-body-emphasis text-center">
+            Explore and Plan
+          </h3>
+          <p class="text-center">
+            Dive into wedding planning through our user-friendly app. Discover
+            inspiration, themes, and decor ideas. Use our tools to plan your
+            timeline, manage your budget, create checklists, and collaborate
+            with your partner.
+          </p>
+        </div>
+        <div class="feature col">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center mb-3"
+          >
+            <img
+              src="/images/supplier-suggestions-icon.svg"
+              alt="sign up icon"
+            />
           </div>
+          <h3 class="pb-2 fs-2 text-body-emphasis text-center">
+            Supplier Suggestions
+          </h3>
+          <p class="text-center">
+            Find trusted suppliers in categories like venues, photographers,
+            florists, and caterers. Explore their profiles, portfolios, and
+            reviews to make informed decisions.
+          </p>
         </div>
       </div>
+    </div>
 
-      <!-- List of Services -->
+    <!-- List of Services -->
+    <div class="servicesBG container-flex">
       <div class="container">
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
-            <div class="feature col">
-                <h2 class="pb-2 fs-2 text-body-emphasis">Sign up and Create Your Profile</h2>
-                <p>Get started by signing up for WeddingScape and creating your profile. Provide basic information about your wedding, such as the date and location.</p>
-                <button type="button" class="btn sharp btn-primary btn-lg px-4 gap-3">Read More</button>
-            </div>
-            <div>
-                <p>Intuitive Budget Management<br>
-                    Curated Vendor Directory<br>
-                    Effortless Guest Management<br>
-                    Detailed Timeline Creation<br>
-                    Customizable Checklist and Task Management<br>
-                    Inspiring Ideas and Inspiration<br>
-                    Simplified Seating Arrangements<br>
-                    Efficient Wedding Registry Management<br>
-                    Personalized Recommendations<br>
-                    Seamless Collaboration Tools</p>
-            </div>
-        </div>
-      </div>
-
-      <!-- Why Choose Us? -->
-      <div class="container">
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
-            <div class="col">
-                <img src="/images/why-choose-us-image.jpg" width="100%">
-            </div>
-            <div class="feature col">
-                <h2 class="pb-2 fs-2 text-body-emphasis">Why Choose Us?</h2>
-                <p>Discover why couples love WeddingScape by reading our glowing testimonials. Hear firsthand accounts of their incredible wedding experiences and how our dedicated team made their dreams come true. Don't just take our word for it – let our satisfied clients share their stories with you.</p>
-                <button type="button" class="btn sharp btn-primary btn-lg px-4 gap-3">Read our Testimonials</button>
-            </div>
-        </div>
-      </div>
-
-      <!-- Stay Inspired -->
-      <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 text-center">Stay Inspired</h2>
-        <p class="mb-4 text-center">Social Media Feed: Find wedding references and inspiration through WeddingScape's social media channels. Follow us on Instagram, Facebook, and Twitter for stunning visuals, real wedding stories, and expert tips. Join our community, connect with other engaged couples, and gather ideas for your dream wedding.</p>
-        <div class="row justify-content-center">
-            <div class="row-cols-lg-3">
-                <img src="/images/facebook.svg" alt="facebook icon" class="mr-2">
-                <img src="/images/instagram.svg" alt="instagram icon" class="mr-2">
-                <img src="/images/youtube.svg" alt="youtube icon" class="mr-2">
-            </div>
-        </div>
-        <div class="container">
-          <div class="row px-1 py-3">
-            <div class="col">
-              <!-- Photo 1 Content -->
-              <div class="square-image">
-                <img src="/images/social-media-image-1.jpg">
-              </div>
-            </div>
-            <div class="col">
-              <!-- Photo 2 Content -->
-              <div class="square-image">
-                <img src="/images/social-media-image-2.jpg">
-              </div>
-            </div>
-            <div class="col">
-              <!-- Photo 3 Content -->
-              <div class="square-image">
-                <img src="/images/social-media-image-3.jpg">
-              </div>
-            </div>
+          <div class="servicesContent feature col-sm-12 col-md-6 col-lg-6">
+            <h2 class="pb-2 fs-2 text-body-emphasis">List of Services</h2>
+            <p>
+              WeddingScape offers a range of comprehensive services to make your
+              wedding planning journey effortless and enjoyable through our
+              user-friendly app:
+            </p>
+            <button
+              type="button"
+              class="btn sharp btn-primary btn-lg px-4 gap-3"
+            >
+              Read More
+            </button>
           </div>
-          <div class="row px-1 py-3">
-            <div class="col">
-              <!-- Photo 4 Content -->
-              <div class="square-image">
-                <img src="/images/social-media-image-4.jpg">
-              </div>
-            </div>
-            <div class="col">
-              <!-- Photo 5 Content -->
-              <div class="square-image">
-                <img src="/images/social-media-image-5.jpg">
-              </div>
-            </div>
-            <div class="col">
-              <!-- Photo 6 Content -->
-              <div class="square-image">
-                <img src="/images/social-media-image-6.jpg">
-              </div>
-            </div>
+          <div class="servicesContainer col-sm-12 col-md-6 col-lg-6">
+            <div class="vertical-line"></div>
+            <p>
+              Intuitive Budget Management<br />
+              Curated Vendor Directory<br />
+              Effortless Guest Management<br />
+              Detailed Timeline Creation<br />
+              Customizable Checklist and Task Management<br />
+              Inspiring Ideas and Inspiration<br />
+              Simplified Seating Arrangements<br />
+              Efficient Wedding Registry Management<br />
+              Personalized Recommendations<br />
+              Seamless Collaboration Tools
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Footer -->
-      <div class="container-flex bg-dark">
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div>
-            <ul class="nav col-md-4">
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Planning Tools</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQ</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Expert Advice</a></li>
-            </ul>
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><img src="/images/facebook-white.svg" alt="white facebook icon" width="24" height="24"></li>
-            <li class="ms-3"><img src="/images/instagram-white.svg" alt="white instagram icon" width="24" height="24"></li>
-            <li class="ms-3"><img src="/images/youtube-white.svg" alt="white youtube icon" width="24" height="24"></li>
-          </ul>
+    <!-- Why Choose Us? -->
+    <div class="whyChooseUsBG container-flex">
+    <div class="container">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <img src="/images/why-choose-us-image.jpg" width="100%" />
         </div>
-          <span class="mb-3 mb-md-0 text-body-secondary text-left">©WeddingScape. All rights Reserved</span>
-        </footer>
+        <div class="whyChooseUsContent col">
+        <div class="feature">
+          <h2 class="pb-2 fs-2 text-body-emphasis">Why Choose Us?</h2>
+          <p>
+            Discover why couples love WeddingScape by reading our glowing
+            testimonials. Hear firsthand accounts of their incredible wedding
+            experiences and how our dedicated team made their dreams come true.
+            Don't just take our word for it – let our satisfied clients share
+            their stories with you.
+          </p>
+          <button type="button" class="btn sharp btn-primary btn-lg px-4 gap-3">
+            Read our Testimonials
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Stay Inspired -->
+    <div class="stayInspired container px-10 py-5" id="featured-3">
+      <h2 class="pb-2 text-center">Stay Inspired</h2>
+      <div class="row justify-content-center">
+        <div class="socialMediaIcons row-cols-lg-3">
+          <img src="/images/facebook.svg" alt="facebook icon" class="mr-2" />
+          <img src="/images/instagram.svg" alt="instagram icon" class="mr-2" />
+          <img src="/images/youtube.svg" alt="youtube icon" class="mr-2" />
+        </div>
+      </div>
+      <p class="stayInspiredText mb-4 text-center">
+        Social Media Feed: Find wedding references and inspiration through
+        WeddingScape's social media channels. Follow us on Instagram, Facebook,
+        and Twitter for stunning visuals, real wedding stories, and expert tips.
+        Join our community, connect with other engaged couples, and gather ideas
+        for your dream wedding.
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <!-- Photo 1 Content -->
+            <div class="square-image">
+              <img src="/images/social-media-image-1.jpg" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <!-- Photo 2 Content -->
+            <div class="square-image">
+              <img src="/images/social-media-image-2.jpg" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <!-- Photo 3 Content -->
+            <div class="square-image">
+              <img src="/images/social-media-image-3.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="row px-1 py-3">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <!-- Photo 4 Content -->
+            <div class="square-image">
+              <img src="/images/social-media-image-4.jpg" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <!-- Photo 5 Content -->
+            <div class="square-image">
+              <img src="/images/social-media-image-5.jpg" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <!-- Photo 6 Content -->
+            <div class="square-image">
+              <img src="/images/social-media-image-6.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Footer -->
+<div class="footerBG container-flex">
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="horizontal-line"></div>
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <ul class="footerNav nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-body-secondary">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-body-secondary">Planning Tools</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-body-secondary">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-body-secondary">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-3 text-body-secondary">Expert Advice</a>
+          </li>
+        </ul>
+      </div>
+      <div class="rightFooter col-sm-12 col-md-12 col-lg-3">
+        <ul class="footerSocials d-flex justify-content-center align-items-center">
+          <li class="ms-3">
+            <img src="/images/facebook-white.svg" alt="white facebook icon" width="30" height="30" />
+          </li>
+          <li class="ms-3">
+            <img src="/images/instagram-white.svg" alt="white instagram icon" width="30" height="30" />
+          </li>
+          <li class="ms-3">
+            <img src="/images/youtube-white.svg" alt="white youtube icon" width="30" height="30" />
+          </li>
+        </ul>
+      </div>
+      <div class="footerBusinessRightsContainer container">
+      <span class="footerBusinessRights mb-3 mb-md-0 text-body-secondary">©WeddingScape. All rights Reserved</span>
+    </div>
+    </footer>
+  </div>
+</div>
+
       </div>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

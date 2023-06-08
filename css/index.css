@@ -1,11 +1,78 @@
+/* Body */
+body {
+  background-color: #F6F5E8;
+  font-family: 'lora',serif;
+  }
+
+
+/* List Indentations */
+ul {
+   list-style:none;
+   padding-left:0;
+}
+
+/* Arrows */
+.arrow {
+  border: solid rgba(255,255,255,.5);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left:5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Heading Fonts */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Libre Baskerville',serif;
+  font-weight:600;
+}
+
 /* Navigation Bar */
 .navbar {
   background-color: #333333;
 }
 
+.nav-item{
+  color:white;
+  margin-left:1em;
+  margin-right:1em;
+}
+
+/* Logo positioning */
+.navbar-brand {
+  margin-left: auto;
+}
+
+/* Logo size */
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+
+/* Button */
 .btn {
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: medium;
+  border: none;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
@@ -30,11 +97,107 @@
   border-radius:0;
 }
 
+/* Hero Space */
+.heroSpace{
+  background-image: url(/images/joanna-kosinska-3BgkveM3y_k-unsplash.jpg);
+  background-size: cover;
+  background-position: 0%;
+  background-repeat: none;
+  width: 100%;
+  height:900px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroElements h2{
+  margin-top: 0.5em;
+}
+
+.heroElements p{
+  padding: 1.5em;
+}
+
+/* How it Works */
+.howItWorksContainer{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.howItWorksElements p{
+  padding-top: 1em;
+  text-align: center;
+}
+
+.howItWorksContainer h3{
+  padding: 1em;
+  text-align: center;
+}
+
+/* Service Area */
+.servicesBG{
+  background-color: #FFFEF2;
+  padding-top: 3em;
+}
+
+.servicesContainer{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesContainer p{
+  line-height: 2em;
+}
+
+.servicesContent{
+  padding: 3em;
+}
+
+.vertical-line{
+  width: 4px;
+  height: 100%;
+  background-color: #D5D5CC;
+  margin-right:3em;
+}
+
+/* Why Choose Us? */
+.whyChooseUsBG{
+  background-color: #FFFEF2;
+  padding-bottom: 3em;
+}
+
+.whyChooseUsContent{
+  display:flex;
+  align-items: center;
+  padding:3em;
+}
+
+/* Stay Inspired */
+.stayInspired{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.socialMediaIcons{
+  padding:1.5em;
+}
+
+.stayInspiredText{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Social Media Tiles */
 .square-image {
   position: relative;
   width: 100%;
-  padding-bottom: 100%; /* Maintain a 1:1 aspect ratio */
+  padding-bottom: 100%;
   overflow: hidden;
+  margin:1em;
+  filter: drop-shadow(-1px 0px 16px rgba(0, 0, 0, 0.5));
 }
 
 .square-image img {
@@ -43,5 +206,134 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  object-fit: cover;
+}
+
+/* Footer */
+.footerBG{
+  background-color: #333333;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+}
+
+.horizontal-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+
+.footerNav{
+  margin-bottom:1em;
+}
+
+.footerNav li a{
+  color:white;
+}
+
+.footerSocials{
+  list-style-type: none;
+}
+
+.footerSocials li {
+  padding:0.5em;
+}
+
+.footerBusinessRights{
+  font-size:12px;
+  color:white;
+  padding-left:1em;
+  text-align: left;
+}
+
+
+@media (min-width: 481px) and (max-width: 991px) {
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+  }
+
+  .footerNav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerNav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .footerBusinessRights{
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .footerBusinessRightsContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+    max-height: 26px;
+    width: auto;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+
+  .heroElements h2{
+    padding-top:1em;
+  }
+
+  .nav-link{
+    font-size:14px;
+  }
+
+  .footerNav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerNav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .footerBusinessRights{
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .footerBusinessRightsContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
